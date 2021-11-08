@@ -1,0 +1,8 @@
+.sidebar-list-items {
+  position: absolute;
+  top: 0;
+  left: 34px;
+}
+.sidebar-list-item {
+  margin: 35px 0 70px 0;
+}

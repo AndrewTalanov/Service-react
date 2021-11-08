@@ -2,56 +2,6 @@
   width: 90%;
   min-height: 200px;
   align-self: end;
-  margin-top: 30px;
   position: relative;
   user-select: none;
-}
-.sidebar-list__active {
-  height: 95px;
-  background-color: #F2F2F2;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 100px;
-}
-.border-one, .border-two, .block-one, .block-two {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 0;
-}
-.border-one, .border-two {
-  background-color: #313030;
-}
-.border-one, .block-one {
-  top: -20px;
-}
-.border-two, .block-two {
-  top: 95px;
-}
-.block-one, .block-two {
-  background-color: #F2F2F2;
-}
-.border-one {
-  border-bottom-right-radius: 30px;
-}
-.border-two {
-  border-top-right-radius: 30px;
-}
-.sidebar-list__btn {
-  width: 75px;
-  height: 75px;
-  border-radius: 20px;
-  background: linear-gradient(to bottom right, #FEC163, #DE4313);;
-}
-.sidebar-list-items {
-  position: absolute;
-  top: 0;
-  left: 38px;
-}
-.sidebar-list-item {
-  margin: 35px 0 70px 0;
 }
