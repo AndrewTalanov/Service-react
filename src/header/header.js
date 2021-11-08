@@ -13,9 +13,21 @@ const Header = () => {
             <div className="title">
               <h1>Доступные рестораны</h1>
             </div>
-          <div className="search__container">
+        <div className="header-form-search-panel">   
+          <div className="header-form-search-panel__container">
             <img src="./images/icon-search.svg" alt="img-error" />
+            <form action="">
+              <label>
+                <input type="search" placeholder=" restaurant search" />
+              </label>
+          </form>
           </div>
+          <div className="header-filtration">
+              <button className = "header-filtration__button">
+                  <img src="./images/filtration-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>  
         </div>    
     </div>
   )
