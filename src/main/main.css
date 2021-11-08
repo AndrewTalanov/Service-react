@@ -1,15 +1,10 @@
-p{
+.main p{
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 .main {
-  width: 100%;
-  min-height: 75vh;
-  margin-top: 25px;
-}
-
-.main__content {
-
+  height: 75vh;
+  margin-top: 10px;
 }
 
 .restaurant-container {
