@@ -2,7 +2,9 @@ import './header-filter-panel.css';
 
 const HeaderFilterPanel = () => {
   return (
-    <div></div>
+    <div className="header-form-filter-panel">
+      <img src="./images/filtration-icon.svg" alt="" />
+    </div>
   )
 }
 

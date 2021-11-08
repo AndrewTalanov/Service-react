@@ -5,6 +5,10 @@ html, body {
   background-color: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
 }
+h1, h2, h3, p {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
 .app {
   display: flex;
 }

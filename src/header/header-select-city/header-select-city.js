@@ -2,7 +2,10 @@ import './header-select-city.css';
 
 const HeaderSelectCity = () => {
   return (
-    <div></div>
+    <div className="header-select-city">
+      <p>Москва</p>
+      <img src="./images/change-city-icon.svg" alt="img" />
+    </div>
   )
 }
 
