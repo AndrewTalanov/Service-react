@@ -6,9 +6,7 @@ const SidebarList = () => {
   return (
     <div className="sidebar-list">
       <SidebarListButton/>
-      
-        <SidebarListItem/>
-      
+      <SidebarListItem/>
     </div>
   )
 }
