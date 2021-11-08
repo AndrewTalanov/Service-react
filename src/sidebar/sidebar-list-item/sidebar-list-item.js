@@ -1,8 +1,10 @@
-import './sidebar-list-item.css'
+import './sidebar-list-item.css';
 
 const SidebarListItem = () => {
   return (
-    <div></div>
+    <div className="sidebar-list-item">
+      <img src='./images/one.png' alt="" />
+    </div>
   )
 }
 
