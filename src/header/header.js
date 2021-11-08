@@ -18,7 +18,7 @@ const Header = () => {
             <img src="./images/icon-search.svg" alt="img-error" />
             <form action="">
               <label>
-                <input type="search" placeholder=" restaurant search" />
+                <input type="search" placeholder="restaurant search" />
               </label>
           </form>
           </div>
