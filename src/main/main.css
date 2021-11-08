@@ -1,6 +1,74 @@
+p{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
 .main {
   width: 100%;
   min-height: 75vh;
   margin-top: 25px;
-  background-color: rgb(36, 42, 104);
+}
+
+.main__content {
+
+}
+
+.restaurant-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-container__card {
+  width: 400px;
+  height: 393px;
+  background: #313030;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.restaurant-container__card img {
+  width: 350px;
+  height: 235px;
+  padding-top: 13px;
+}
+
+.restaurant_container__card-naming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.restaurant_container__card-naming {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.restaurant_container__card-discription {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.restaurant_container__card-discription p{
+  font-size: 16px;
+  font-weight: 600;
+}
+.restaurant_container_card__discription-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.restaurant_container_card__discription-contact img{
+  width: 97px;
+  height: 16px;
+}
+.restaurant_container_card__discription-price{
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurant_container_card__discription-price img{
+  width: 77.13px;
+  height: 17.06px;
 }
