@@ -1,0 +1,52 @@
+.restaurant-container__card {
+  width: 400px;
+  height: 393px;
+  background: #313030;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.card-list-item-img {
+  width: 350px;
+  height: 235px;
+}
+.restaurant_container__card-naming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.restaurant_container__card-discription {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.restaurant_container__card-discription p{
+  font-size: 16px;
+  font-weight: 600;
+}
+.restaurant_container_card__discription-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurant_container_card__discription-contact img{
+  width: 97px;
+  height: 16px;
+  margin-top: 10px;
+}
+.restaurant_container_card__discription-price{
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurant_container_card__discription-price img{
+  width: 77.13px;
+  height: 17.06px;
+  margin-top: 10px;
+}
+.restaurant_container__card-discription p, .card-list-item-title{
+  margin-top: 10px;
+}

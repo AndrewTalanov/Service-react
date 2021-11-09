@@ -2,8 +2,23 @@ import './main-card-list-item.css'
 
 const MainCardListItem = () => {
   return (
-    <div></div>
-  ) 
+    <div className="restaurant-container__card">
+      <div className="restaurant_container__card-naming">
+        <img className="card-list-item-img" src="./images/restaurant_1.png" alt="img-error" />
+        <p className="card-list-item-title">Полли</p>
+        <div className="restaurant_container__card-discription">
+          <div className="restaurant_container_card__discription-contact">
+            <img src="./images/restaurant_stars.png" alt="img-error" />
+            <p>Молодогвардейцев, 84</p>
+          </div>
+          <div className="restaurant_container_card__discription-price">
+            <img src="./images/price.png" alt="img-error" />
+            <p>12:00 - 22:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default MainCardListItem;
