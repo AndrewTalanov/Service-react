@@ -1,3 +1,15 @@
+# Описание сервиса, команда
+
+Состав команды: 
+Елизавета Газизова
+Андрей Бавыка
+Андрей Таланов
+
+Название проекта: 
+Сервис по бронированию столиков в ресторанах 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
