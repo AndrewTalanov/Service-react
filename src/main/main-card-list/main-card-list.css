@@ -1,6 +1,7 @@
 .main-card-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-right: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-column-gap: 40px;
+  grid-row-gap: 35px;
+  margin-top: 20px;
 }
