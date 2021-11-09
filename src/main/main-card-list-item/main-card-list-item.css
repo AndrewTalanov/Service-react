@@ -4,6 +4,7 @@
   background: #313030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  cursor: pointer;
 }
 .card-list-item-img {
   width: 350px;
@@ -16,6 +17,7 @@
   margin-top: 13px;
   font-size: 18px;
   font-weight: 800;
+  user-select: none;
 }
 .restaurant_container__card-discription {
   display: flex;
