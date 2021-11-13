@@ -1,8 +1,11 @@
 .sidebar-list-items {
   position: absolute;
   top: 0;
-  left: 34px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;  
 }
 .sidebar-list-item {
-  margin: 35px 0 70px 0;
+  margin: 35px 0 35px 0;
 }

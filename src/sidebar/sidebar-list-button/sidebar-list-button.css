@@ -1,42 +1,47 @@
-.sidebar-list__active {
+.sidebar-list-wrapper {
   height: 95px;
   background-color: #F2F2F2;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   position: relative;
-  display: flex;
-  align-items: center;
-  right: 0;
+  right: -1px;
   top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.border-one, .border-two, .block-one, .block-two {
-  width: 20px;
-  height: 20px;
+.after, .before {
   position: absolute;
+  width: 20%;
+  height: 21%;
   right: 0;
-}
-.border-one, .border-two {
-  background-color: #313030;
-}
-.border-one, .block-one {
-  top: -20px;
-}
-.border-two, .block-two {
-  top: 95px;
-}
-.block-one, .block-two {
   background-color: #F2F2F2;
 }
-.border-one {
-  border-bottom-right-radius: 30px;
+.after {
+  top: -20%;
 }
-.border-two {
-  border-top-right-radius: 30px;
+.before {
+  top: 99%;  
+}
+.after::after, .before::before {
+  position: absolute;
+  content: "";
+  background-color: #313030;
+  width: 100%;
+  height: 100%;
+  left: -1px;
+}
+.after::after {
+  border-bottom-right-radius: 15px;
+  top: -1px;
+}
+.before::before {
+  border-top-right-radius: 15px;
+  top: 1px;
 }
 .sidebar-list__btn {
-  width: 75%;
-  height: 77%;
-  border-radius: 20px;
+  width: 70%;
+  height: 70%;
   background: linear-gradient(to bottom right, #FEC163, #DE4313);
-  margin-left: 10px;
+  border-radius: 15px;
 }

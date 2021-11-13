@@ -1,5 +1,6 @@
 .sidebar-list {
   width: 90%;
+  height: 100%;
   align-self: end;
   position: relative;
   user-select: none;
