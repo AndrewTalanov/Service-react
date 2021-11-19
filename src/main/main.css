@@ -1,6 +1,6 @@
 p{
   font-family: 'Montserrat', sans-serif;
-  color: white;
+ 
 }
 .main {
   width: 100%;
@@ -42,6 +42,7 @@ p{
 .restaurant_container__card-naming {
   font-size: 18px;
   font-weight: 800;
+  color: white;
 }
 
 .restaurant_container__card-discription {
