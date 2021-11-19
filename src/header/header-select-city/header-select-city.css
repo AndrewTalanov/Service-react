@@ -1,0 +1,10 @@
+.header-select-city {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+}
+.header-select-city img {
+  padding-left: 14px;
+}

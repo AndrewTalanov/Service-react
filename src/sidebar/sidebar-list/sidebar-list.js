@@ -1,27 +1,20 @@
 import './sidebar-list.css'; 
 import SidebarListItem from '../sidebar-list-item/sidebar-list-item';
+import SidebarListButton from '../sidebar-list-button/sidebar-list-button';
 
-const SidebarList = () => {
+const SidebarList = ({data}) => {
+
+  const items = data.map(item => {
+    return (
+      <SidebarListItem key={item.id} {...item}/>
+    )
+  })
+
   return (
     <div className="sidebar-list">
-      <div className="sidebar-list__active">
-        <div className="block-one"></div>
-        <div className="block-two"></div>
-        <div className="border-one"></div>
-        <div className="border-two"></div>
-        <div className="sidebar-list__btn"></div>
-      </div>
+      <SidebarListButton/>
       <div className="sidebar-list-items">
-        <SidebarListItem/>
-        <div className="sidebar-list-item">
-          <img src='./images/one.png' alt="" />
-        </div>
-        <div className="sidebar-list-item">
-          <img src='./images/two.png' alt="" />
-        </div>
-        <div className="sidebar-list-item">
-          <img src='./images/three.png' alt="" />
-        </div>
+        {items}
       </div>
     </div>
   )

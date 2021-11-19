@@ -1,34 +1,21 @@
+import HeaderSelectCity from './header-select-city/header-select-city';
+import HeaderSearchPanel from './header-search-panel/header-search-panel';
 import './header.css';
+import HeaderFilterPanel from './header-filter-panel/header-filter-panel';
 
 const Header = () => {
   return (
     <div className="header">
-          <div className="change__city">
-            <div className="change__city-container">
-              <p>Москва</p>
-              <img src="./images/change-city-icon.svg" alt="img-error" />
-            </div>      
-         </div>
-        <div className="header__wrapper">
-            <div className="title">
-              <h1>Доступные рестораны</h1>
-            </div>
-        <div className="header-form-search-panel">   
-          <div className="header-form-search-panel__container">
-            <img src="./images/icon-search.svg" alt="img-error" />
-            <form action="">
-              <label>
-                <input type="search" placeholder="restaurant search" />
-              </label>
-          </form>
-          </div>
-          <div className="header-filtration">
-              <button className = "header-filtration__button">
-                  <img src="./images/filtration-icon.svg" alt="" />
-              </button>
-            </div>
-          </div>  
-        </div>    
+      <HeaderSelectCity/>
+      <div className="header-filters">
+        <h1 className="header-filters-title">
+          Доступные рестораны
+        </h1>
+        <form action="" className="header-form">
+          <HeaderSearchPanel/>
+          <HeaderFilterPanel/>
+        </form>
+      </div>
     </div>
   )
 }

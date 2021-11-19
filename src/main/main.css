@@ -1,15 +1,16 @@
-p{
+.main p{
   font-family: 'Montserrat', sans-serif;
  
 }
 .main {
-  width: 100%;
-  min-height: 75vh;
-  margin-top: 25px;
+  height: 80vh;
+  margin-top: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
-
-.main__content {
-
+::-webkit-scrollbar {
+  width: 5px; 
+  background-color: #F2F2F2;
 }
 
 .restaurant-container {
@@ -72,4 +73,8 @@ p{
 .restaurant_container_card__discription-price img{
   width: 77.13px;
   height: 17.06px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #F2F2F2;
+  border-radius: 10px;
 }

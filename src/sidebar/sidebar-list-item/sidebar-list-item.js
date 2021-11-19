@@ -1,8 +1,10 @@
 import './sidebar-list-item.css';
 
-const SidebarListItem = () => {
+const SidebarListItem = (props) => {
   return (
-    <div></div>
+      <div className="sidebar-list-item">
+        <img src={props.icon} alt="" />
+      </div>
   )
 }
 
