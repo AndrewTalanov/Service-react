@@ -8,9 +8,9 @@ const Header = () => {
     <div className="header">
       <HeaderSelectCity/>
       <div className="header-filters">
-        <div className="header-filters-title">
-          <h1>Доступные рестораны</h1>
-        </div>
+        <h1 className="header-filters-title">
+          Доступные рестораны
+        </h1>
         <form action="" className="header-form">
           <HeaderSearchPanel/>
           <HeaderFilterPanel/>
