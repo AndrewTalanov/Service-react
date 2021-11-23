@@ -8,3 +8,11 @@
 .header-select-city img {
   padding-left: 14px;
 }
+@media (max-width: 375px) {
+  .header-select-city p {
+    font-size: 14px;
+  }
+  .header-select-city img {
+    padding-left: 5px;
+  }
+}

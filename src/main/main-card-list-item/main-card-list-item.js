@@ -15,16 +15,16 @@ const MainCardListItem = (props) => {
               <img src="./images/star_active.svg" alt="star" />
               <img src="./images/star.svg" alt="star" />
             </div>
-            <p>{props.adress}</p>
-          </div>
-          <div className="restaurant_container_card__discription-price">
-          <div className="restaurant-card-icon-items">
+            <div className="restaurant-card-icon-items">
               <img src="./images/value_active.svg" alt="value" />
               <img src="./images/value_active.svg" alt="value" />
               <img src="./images/value_active.svg" alt="value" />
               <img src="./images/value.svg" alt="value" />
               <img src="./images/value.svg" alt="value" />
             </div>
+          </div>
+          <div className="restaurant_container_card__discription-price">
+            <p>{props.adress}</p>
             <p>{props.time}</p>
           </div>
         </div>

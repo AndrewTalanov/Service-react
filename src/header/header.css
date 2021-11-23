@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 140px;
-  margin-top: 30px;
+  margin: 30px 0 20px 0;
   background-color: #F2F2F2;
 }
 .header-filters {
@@ -17,4 +17,54 @@
 .header-form{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1600px) {
+  .header {
+    height: 110px;
+    margin: 10px 0 20px 0;
+  }
+  .header-filters {
+    margin-top: 30px;
+  }
+  .header-filters-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 630px) {
+  .header-filters-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    margin: 15px 0;
+  }
+  .header-filters-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    margin: 15px 0 30px 0;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    margin: 20px 0 25px 0;
+  }
+  .header-filters {
+    margin-top: 15px;
+  }
+  .header-filters-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 370px) {
+  .header {
+    margin: 10px 0 15px 0;
+  }
+  .header-filters-title {
+    font-size: 22px;
+  }
 }

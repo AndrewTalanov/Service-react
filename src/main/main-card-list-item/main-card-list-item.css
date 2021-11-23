@@ -22,6 +22,7 @@
   display: flex;
   width: 90%;
   justify-content: space-between;
+  flex-direction: column;
 }
 .restaurant_container__card-discription p{
   font-size: 16px;
@@ -29,12 +30,10 @@
 }
 .restaurant_container_card__discription-contact {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .restaurant_container_card__discription-price{
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .restaurant_container__card-discription p, .card-list-item-title{
@@ -42,7 +41,7 @@
 }
 .restaurant-card-icon-items {
   display: flex;
-  width: 20%;
+  align-items: center;
 }
 .restaurant-card-icon-items img{
   margin-right: 3px;
@@ -50,5 +49,30 @@
 @media (max-width: 1280px) {
   .restaurant_container__card-discription p {
     font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .restaurant_container__card-discription {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 385px) {
+  .card-list-item-title {
+    font-size: 16px;
+  }
+  .restaurant-card-icon-items img{
+    width: 14px;
+    height: 16px;
+  }
+  .restaurant_container__card-discription p {
+    font-size: 12px;
+  }
+  .restaurant_container_card__discription-price p {
+    width: 30%;
+  }
+}
+@media (max-width: 375px) {
+  .restaurant_container_card__discription-price p {
+    width: 35%;
   }
 }
