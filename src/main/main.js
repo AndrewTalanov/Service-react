@@ -18,6 +18,7 @@ const Main = () => {
   return (
     <div className="main">
       <MainCardList data={data}/>
+      
     </div>
   )
 }

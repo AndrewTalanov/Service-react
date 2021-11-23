@@ -3,11 +3,20 @@ import Main from '../main/main';
 import Sidebar from '../sidebar/sidebar';
 import './app.css'
 
-function App() {
 
+let width = null;
+
+function getWidth() {
+  width = document.body.clientWidth;
+  console.log(width);
+  return width;
+}
+
+function App() {
+  getWidth();
   return (
     <div className="app">
-      <Sidebar/>
+      {width > 600 && <Sidebar/>}
       <div className="content-page">
         <Header/>
         <Main/>

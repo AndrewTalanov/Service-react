@@ -8,11 +8,23 @@ const MainCardListItem = (props) => {
         <p className="card-list-item-title">{props.name}</p>
         <div className="restaurant_container__card-discription">
           <div className="restaurant_container_card__discription-contact">
-            <img src="./images/restaurant_stars.png" alt="img-error" />
+            <div className="restaurant-card-icon-items">
+              <img src="./images/star_active.svg" alt="star" />
+              <img src="./images/star_active.svg" alt="star" />
+              <img src="./images/star_active.svg" alt="star" />
+              <img src="./images/star_active.svg" alt="star" />
+              <img src="./images/star.svg" alt="star" />
+            </div>
             <p>{props.adress}</p>
           </div>
           <div className="restaurant_container_card__discription-price">
-            <img src="./images/price.png" alt="img-error" />
+          <div className="restaurant-card-icon-items">
+              <img src="./images/value_active.svg" alt="value" />
+              <img src="./images/value_active.svg" alt="value" />
+              <img src="./images/value_active.svg" alt="value" />
+              <img src="./images/value.svg" alt="value" />
+              <img src="./images/value.svg" alt="value" />
+            </div>
             <p>{props.time}</p>
           </div>
         </div>
