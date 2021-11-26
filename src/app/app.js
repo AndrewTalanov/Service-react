@@ -1,36 +1,49 @@
-import { useState } from 'react'
+import { Component } from 'react';
+
 import Header from '../header/header';
 import Main from '../main/main';
 import Modal from '../modal/modal';
 import Sidebar from '../sidebar/sidebar';
 import './app.css'
 
-let width = null;
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: null,
+    }
+  }
 
-function getWidth() {
-  width = document.body.clientWidth;
-  console.log(width);
-  return width;
-}
+  resize() {
+    this.setState({ width: window.innerWidth > 600 });
+  }
+  
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.resize.bind(this));
+  }
 
-function App() {
-  const [modalActive, setModalActive] = useState()//отвечает за состояние модалки
-
-  getWidth();
-
-  return (
-    <div className="app">
-      {width > 600 && <Sidebar/>}
-      <div className="content-page">
-        <button  onClick = {() => setModalActive(true)}></button>
-        <Header/>
-        <Main/>      
-        <Modal 
-        active = {modalActive} 
-        setActive = {setModalActive}/>
+  render() {
+    return (
+      <div className="app">
+        {this.state.width && <Sidebar />}
+        <div className="content-page">
+          <Header />
+          <Main
+          // onModal={onModal}
+          />
+          <Modal
+          // modal={modal}
+          // active = {modalActive} 
+          // setActive = {setModalActive}
+          />
+        </div>
       </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default App;
