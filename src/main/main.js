@@ -1,7 +1,7 @@
 import MainCardList from './main-card-list/main-card-list';
 import './main.css';
 
-const Main = ({test, toggleModal}) => {
+const Main = ({toggleModal}) => {
   
   const data = [
     {id: 1, src: "./images/restaurant_1.png", name: "Полли", adress: "Молодогвардейцев, 84", time: "12:00 - 22:00"},
@@ -26,7 +26,6 @@ const Main = ({test, toggleModal}) => {
   
   return (
     <div className="main">
-      <h1>{test}</h1>
       <MainCardList toggleModal={toggleModal} getId={id => console.log(id)} data={data}/>
     </div>
   )

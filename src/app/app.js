@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: null,
+      widthBool: null,
       visibleModal: false
     }
 
@@ -21,7 +21,7 @@ class App extends Component {
     this.setState({ visibleModal: bool })
   }
   resize() {
-    this.setState({ width: window.innerWidth });
+    this.setState({ widthBool: window.innerWidth > 600 });
   }
 
   componentDidMount() {
@@ -35,12 +35,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        {this.state.width && <Sidebar />}
+        {this.state.widthBool && <Sidebar />}
         <div className="content-page">      
           <Header />
           <Main
             toggleModal={this.toggleModal}
-            test={this.state.width}
           />
           <Modal
             toggleModal={this.toggleModal}

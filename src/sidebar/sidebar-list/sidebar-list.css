@@ -5,3 +5,8 @@
   position: relative;
   user-select: none;
 }
+@media (max-width: 1600px) {
+  .sidebar-list {
+    width: 80%;
+  }
+}

@@ -45,3 +45,9 @@
   background: linear-gradient(to bottom right, #FEC163, #DE4313);
   border-radius: 15px;
 }
+
+@media (max-width: 1600px) {
+  .sidebar-list-wrapper {
+    height: 90px;
+  }
+}
