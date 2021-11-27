@@ -6,6 +6,7 @@ html, body {
   padding: 0;
   background-color: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
+  overflow: hidden;
 }
 h1, h2, h3, p {
   font-family: 'PT Sans', sans-serif;

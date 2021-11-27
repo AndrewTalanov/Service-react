@@ -2,13 +2,11 @@
   width: 130px;
   height: 100vh;
   background-color: #313030;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .logo {
+  pointer-events: none;
   margin: 25px 0;
-  user-select: none;
 }

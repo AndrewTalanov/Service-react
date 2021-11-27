@@ -37,14 +37,12 @@ class App extends Component {
       <div className="app">
         {this.state.widthBool && <Sidebar />}
         <div className="content-page">      
-          <Header />
-          <Main
-            toggleModal={this.toggleModal}
-          />
-          <Modal
+          {!this.state.visibleModal && <Header />}
+          {!this.state.visibleModal && <Main toggleModal={this.toggleModal} />}
+          {this.state.visibleModal && <Modal
             toggleModal={this.toggleModal}
             visibleModal={this.state.visibleModal}
-          />
+          />}
         </div>
       </div>
     )

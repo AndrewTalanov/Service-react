@@ -1,19 +1,24 @@
 import MainCardListItem from '../main-card-list-item/main-card-list-item';
 import './main-card-list.css';
+import {Component} from 'react';
 
-const MainCardList = ({toggleModal, getId, data}) => {
+class MainCardList extends Component {
 
-  const items = data.map(item => {
+  render() {
+    const {toggleModal, getId, data} = this.props
+
+    const items = data.map(item => {
+      return (
+        <MainCardListItem toggleModal={toggleModal} getId={() => getId(item.id)} key={item.id} {...item}/>
+      )
+    })
+    
     return (
-      <MainCardListItem toggleModal={toggleModal} getId={() => getId(item.id)} key={item.id} {...item}/>
+      <div className="main-card-list">
+        {items}
+      </div>
     )
-  })
-  
-  return (
-    <div className="main-card-list">
-      {items}
-    </div>
-  )
+  }
 }
 
 export default MainCardList;
