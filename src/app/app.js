@@ -21,7 +21,7 @@ class App extends Component {
     this.setState({ visibleModal: bool })
   }
   resize() {
-    this.setState({ width: window.innerWidth > 600 });
+    this.setState({ width: window.innerWidth });
   }
 
   componentDidMount() {
@@ -36,10 +36,11 @@ class App extends Component {
     return (
       <div className="app">
         {this.state.width && <Sidebar />}
-        <div className="content-page">
+        <div className="content-page">      
           <Header />
           <Main
             toggleModal={this.toggleModal}
+            test={this.state.width}
           />
           <Modal
             toggleModal={this.toggleModal}
