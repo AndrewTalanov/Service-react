@@ -15,7 +15,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 15px;
-  max-width: 48.8%;
+  max-width: 48.6%;
 }
 
 @media (max-width: 1600px) {
@@ -25,7 +25,7 @@
   }
 
   .header-form {
-    max-width: 65.8%;
+    max-width: 65.5%;
   }
 
   .header-filters {
@@ -36,7 +36,7 @@
 
 @media (max-width: 1100px) {
   .header-form {
-    max-width: 99%;
+    max-width: 99.45%;
   }
 }
 
@@ -72,6 +72,6 @@
   }
 
   .header-filters-title {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
