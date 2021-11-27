@@ -1,12 +1,8 @@
 .sidebar-list {
   width: 90%;
   height: 100%;
-  align-self: end;
+  align-self: flex-end;
   position: relative;
   user-select: none;
 }
-@media (max-width: 1600px) {
-  .sidebar-list {
-    width: 80%;
-  }
-}
+
