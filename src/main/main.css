@@ -5,7 +5,7 @@
 .main {
   height: 80vh;
   margin-top: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   overflow-y: scroll;
 }
 ::-webkit-scrollbar {
@@ -15,4 +15,44 @@
 ::-webkit-scrollbar-thumb {
   background-color: #F2F2F2;
   border-radius: 10px;
+}
+@media (max-height: 2160px) {
+  .main {
+    height: 90vh;
+  }
+}
+@media (max-height: 1915px) {
+  .main {
+    height: 85vh;
+  }
+}
+@media (max-height: 1340px) {
+  .main {
+    height: 80vh;
+  }
+}
+@media (max-height: 990px) {
+  .main {
+    height: 75vh;
+  }
+}
+@media (max-height: 750px) {
+  .main {
+    height: 70vh;
+  }
+}
+@media (max-height: 630px) {
+  .main {
+    height: 65vh;
+  }
+}
+@media (max-height: 530px) {
+  .main {
+    height: 60vh;
+  }
+}
+@media (max-height: 460px) {
+  .main {
+    height: 55vh;
+  }
 }
