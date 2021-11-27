@@ -12,8 +12,8 @@ const Header = () => {
           Доступные рестораны
         </h1>
         <form action="" className="header-form">
-          <HeaderSearchPanel/>
           <HeaderFilterPanel/>
+          <HeaderSearchPanel/>  
         </form>
       </div>
     </div>
