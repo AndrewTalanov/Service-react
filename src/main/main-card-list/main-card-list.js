@@ -5,11 +5,14 @@ import {Component} from 'react';
 class MainCardList extends Component {
 
   render() {
-    const {toggleModal, getId, data} = this.props
-
-    const items = data.map(item => {
+    const {toggleModal, restData} = this.props
+    
+    const items = restData.restorans.map(item => {
       return (
-        <MainCardListItem toggleModal={toggleModal} getId={() => getId(item.id)} key={item.id} {...item}/>
+        <MainCardListItem
+          toggleModal={toggleModal}
+          restData={restData}
+          key={item.id} {...item}/>
       )
     })
     

@@ -5,6 +5,7 @@ import Main from '../main/main';
 import Modal from '../modal/modal';
 import Sidebar from '../sidebar/sidebar';
 import './app.css'
+import restData from '../data.json' 
 
 class App extends Component {
   constructor(props) {
@@ -33,12 +34,13 @@ class App extends Component {
   }
 
   render() {
+    
     return (
       <div className="app">
         {this.state.widthBool && <Sidebar />}
         <div className="content-page">      
           {!this.state.visibleModal && <Header />}
-          {!this.state.visibleModal && <Main toggleModal={this.toggleModal} />}
+          {!this.state.visibleModal && <Main toggleModal={this.toggleModal} restData={restData}/>}
           {this.state.visibleModal && <Modal
             toggleModal={this.toggleModal}
             visibleModal={this.state.visibleModal}
