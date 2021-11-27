@@ -1,11 +1,11 @@
 import MainCardListItem from '../main-card-list-item/main-card-list-item';
 import './main-card-list.css';
 
-const MainCardList = ({onModal, getId, data}) => {
+const MainCardList = ({toggleModal, getId, data}) => {
 
   const items = data.map(item => {
     return (
-      <MainCardListItem onModal={onModal} getId={() => getId(item.id)} key={item.id} {...item}/>
+      <MainCardListItem toggleModal={toggleModal} getId={() => getId(item.id)} key={item.id} {...item}/>
     )
   })
   

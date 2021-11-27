@@ -2,7 +2,7 @@ import './main-card-list-item.css'
 
 const MainCardListItem = (props) => {
   return (
-    <div onClick={() => props.onModal()} className="restaurant-container__card">
+    <div onClick={() => props.toggleModal(true)} className="restaurant-container__card">
       <div className="restaurant_container__card-naming">
         <img className="card-list-item-img" src={props.src} alt="img-error" />
         <p className="card-list-item-title">{props.name}</p>

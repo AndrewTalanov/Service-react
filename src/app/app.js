@@ -11,13 +11,19 @@ class App extends Component {
     super(props);
     this.state = {
       width: null,
+      visibleModal: false
     }
+
+    this.toggleModal = this.toggleModal.bind(this)
   }
 
+  toggleModal(bool) {
+    this.setState({ visibleModal: bool })
+  }
   resize() {
     this.setState({ width: window.innerWidth > 600 });
   }
-  
+
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
@@ -33,12 +39,11 @@ class App extends Component {
         <div className="content-page">
           <Header />
           <Main
-          // onModal={onModal}
+            toggleModal={this.toggleModal}
           />
           <Modal
-          // modal={modal}
-          // active = {modalActive} 
-          // setActive = {setModalActive}
+            toggleModal={this.toggleModal}
+            visibleModal={this.state.visibleModal}
           />
         </div>
       </div>

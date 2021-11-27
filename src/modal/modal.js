@@ -1,9 +1,9 @@
 import './modal.css';
 
-const Modal = ({modal}) => {
-    // console.log(modal)
+const Modal = ({visibleModal, toggleModal}) => {
+    
     return(
-        <div className= {modal ? "modal active" : "modal"}>
+        <div className= {visibleModal ? "modal active" : "modal"} onClick={() => toggleModal(false)}>
             <div className="modal__content" onClick={ e => e.stopPropagation()}>
 
             </div>
