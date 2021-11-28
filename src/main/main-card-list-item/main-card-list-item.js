@@ -2,7 +2,7 @@ import './main-card-list-item.css'
 
 const MainCardListItem = (props) => {
   
-  const {name, timeStart, timeEnd, stars, receipt, street, house, images} = props
+  const {name, timeStart, timeEnd, street, house, images} = props
   return (
     <div onClick={() => props.toggleModal(true)} className="restaurant-container__card">
       <div className="restaurant_container__card-naming">
@@ -27,7 +27,7 @@ const MainCardListItem = (props) => {
           </div>
           <div className="restaurant_container_card__discription-price">
             <p>{street}, {house}</p>
-            <p>{timeStart}:00 - {timeEnd}:00</p>
+            <p className="card-description-time">{timeStart}:00 - {timeEnd}:00</p>
           </div>
         </div>
       </div>
