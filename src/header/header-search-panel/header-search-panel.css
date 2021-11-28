@@ -39,7 +39,14 @@
     height: 50px;
   }
   .button-search {
-    /* height: 50px; */
     width: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .button-search {
+    display: none;
+  }
+  .search-panel {
+    border-radius: 13px;
   }
 }
