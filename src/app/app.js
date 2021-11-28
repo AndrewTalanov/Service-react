@@ -4,6 +4,7 @@ import Header from '../header/header';
 import Main from '../main/main';
 import Modal from '../modal/modal';
 import Sidebar from '../sidebar/sidebar';
+import SidebarMobile from '../sidebar/sidebar-mobile/sidebar-mobile';
 import './app.css'
 import restData from '../data.json' 
 
@@ -45,6 +46,7 @@ class App extends Component {
             visibleModal={this.state.visibleModal}
           />}
         </div>
+        {!this.state.widthBool && !this.state.visibleModal && <SidebarMobile/>}
       </div>
     )
   }

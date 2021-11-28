@@ -34,3 +34,8 @@
     grid-row-gap: 15px;
   }
 }
+@media (max-width: 600px) {
+  .main-card-list {
+    padding: 0 0 40px 0;
+  }
+}
