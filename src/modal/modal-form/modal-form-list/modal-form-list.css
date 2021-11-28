@@ -1,0 +1,76 @@
+.modal-form-list-container {
+   
+}
+
+.modal-form-guest {
+    display: flex;
+    align-items: center;
+}
+
+.modal-form-guest input {
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 55px;
+    height: 30px;
+}
+
+.modal-form-time {
+    display: flex;
+    align-items: center;
+    margin: 3% 0 5% 0;
+}
+.modal-form-time p{
+    font-size: 18px;
+}
+.modal-form-time input {
+    margin-left: 20px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 55px;
+    height: 30px;
+}
+
+.modal-form-choice-table {
+
+}
+.modal-form-choice-table p {
+    margin-top: 1%;
+}
+.choice-table-radio {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    cursor: pointer;
+    padding: 3px 15px;
+    line-height: 34px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    user-select: none;
+    background-color: white;
+    color: black;
+}
+
+.form_radio_btn input[type=radio]:checked+label {
+    background: #FFE734;
+    transition: 0.3s;
+}
+
+.form_radio_btn label:hover {
+    color: red;
+}
