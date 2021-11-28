@@ -7,15 +7,14 @@
   margin-top: 10px;
   overflow-y: scroll;
 }
-::-webkit-scrollbar {
+.main::-webkit-scrollbar {
   width: 5px; 
   background-color: #F2F2F2;
 }
-::-webkit-scrollbar-thumb {
+.main::-webkit-scrollbar-thumb {
   background-color: #F2F2F2;
   border-radius: 10px;
 }
-
 @media (max-height: 2160px) { .main {height: 90vh;} }
 @media (max-height: 1915px) { .main {height: 87vh;} }
 @media (max-height: 1570px) { .main {height: 85vh;} }

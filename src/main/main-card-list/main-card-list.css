@@ -3,6 +3,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 2.5%;
 }
+.main-card-list::-webkit-scrollbar {
+  width: 5px; 
+  background-color: #F2F2F2;
+}
+.main-card-list::-webkit-scrollbar-thumb {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
 @media (max-width: 2560px) {
   .main-card-list {
     grid-row-gap: 4%;
