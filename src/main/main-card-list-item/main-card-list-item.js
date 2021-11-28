@@ -1,7 +1,7 @@
 import './main-card-list-item.css'
 
 const MainCardListItem = (props) => {
-  console.log(props.images[0])
+  
   const {name, timeStart, timeEnd, stars, receipt, street, house, images} = props
   return (
     <div onClick={() => props.toggleModal(true)} className="restaurant-container__card">

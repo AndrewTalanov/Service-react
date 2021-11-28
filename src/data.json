@@ -19,7 +19,7 @@
                 "longitude":  61.36515594589739
             },
             "images": [
-                "./images/restaurant_1.png",
+                "https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana1.jpg",
                 "images/sample.gif",
                 "images/sample.gif",
                 "images/sample.gif"
@@ -33,7 +33,7 @@
             "timeStart": 10,
             "timeEnd": 23,
             "stars": 4,
-            "street": "Краснопольский проспект",
+            "street": "Краснопольский пр",
             "house": 17,
             "phone": "+73512254747",
             "receipt": 1,
@@ -45,7 +45,7 @@
                 "longitude": 61.288337949062222
             },
             "images": [
-                "./images/restaurant_1.png",
+                "https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana9.jpg",
                 "images/sample.gif",
                 "images/sample.gif",
                 "images/sample.gif"
@@ -70,7 +70,7 @@
                 "longitude": 61.367719736472495
             },
             "images": [
-                "./images/restaurant_1.png",
+                "https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana12.jpg",
                 "images/sample.gif",
                 "images/sample.gif",
                 "images/sample.gif"
@@ -94,7 +94,7 @@
                 "longitude": 61.365914034375486
             },
             "images": [
-                "./images/restaurant_1.png",
+                "https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana16.jpg",
                 "images/sample.gif",
                 "images/sample.gif",
                 "images/sample.gif"
@@ -119,7 +119,7 @@
                 "longitude":  61.29593943861414
             },
             "images": [
-                "./images/restaurant_1.png",
+                "https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana17.jpg",
                 "images/sample.gif",
                 "images/sample.gif",
                 "images/sample.gif"
@@ -144,7 +144,7 @@
                 "longitude":  60.597689649211794
             },
             "images": [
-                "./images/restaurant_1.png",
+                "https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana18.jpg",
                 "images/sample.gif",
                 "images/sample.gif",
                 "images/sample.gif"
