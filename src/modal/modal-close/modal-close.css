@@ -1,0 +1,10 @@
+.close-modal-window{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+.close-modal-window__btn{
+    border: none;
+    cursor: pointer;
+    background: none; 
+}
