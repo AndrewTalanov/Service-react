@@ -1,4 +1,5 @@
 .header-form-search-panel {
+  height: 60px;
   width: 100%;
   padding-left: 50px;
   display: flex;
@@ -18,12 +19,13 @@
   padding-left: 20px;
   color: #f2f2f2;
   outline: none;
+  /* outline-color: #f2f2f2; */
 }
 
 .button-search {
   background-color: #313030;
   width: 60px;
-  height: 60px;
+  height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
@@ -34,10 +36,10 @@
 @media (max-width: 1600px) {
   .header-form-search-panel {
     padding-left: 20px;
-  }
-  
-  .button-search {
     height: 50px;
+  }
+  .button-search {
+    /* height: 50px; */
     width: 50px;
   }
 }
