@@ -5,7 +5,8 @@ const MainCardListItem = (props) => {
   const {name, timeStart, timeEnd, street, house, images, stars, receipt} = props
 
   let allStars = '';
-  const getStars = () => {
+  let allRec = '';
+  const getIcons = () => {
     for (let i = 0; i < stars; i++) {
       allStars += '<img src="./images/star_active.svg" alt="star" />'
     }
@@ -15,12 +16,6 @@ const MainCardListItem = (props) => {
       }
     }
 
-    return allStars
-  }
-  getStars()
-
-  let allRec = '';
-  const getRec = () => {
     for (let i = 0; i < receipt; i++) {
       allRec += '<img src="./images/value_active.svg" alt="star" />'
     }
@@ -30,9 +25,10 @@ const MainCardListItem = (props) => {
       }
     }
 
-    return allRec
+    return allStars, allRec
   }
-  getRec()
+  getIcons()
+
 
 
 
