@@ -13,19 +13,21 @@ class App extends Component {
     super(props);
     this.state = {
       widthBool: null,
-      visibleModal: false
+      visibleModal: false,
     }
 
     this.toggleModal = this.toggleModal.bind(this)
   }
 
+  // включение/выключение модального окна
   toggleModal(bool) {
     this.setState({ visibleModal: bool })
   }
+
+  // отслеживаем ширину экрана 
   resize() {
     this.setState({ widthBool: window.innerWidth > 600 });
-  }
-
+  } 
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();

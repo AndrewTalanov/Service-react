@@ -10,7 +10,7 @@ const SidebarMobile = () => {
 
   const items = data.map(item => {
     return (
-      <div key={item.id} className="sidebar-mobile-icon">
+      <div key={item.id} className="sidebar-mobile-icon" >
           <img src={item.icon} alt="one" />
       </div>
     )
