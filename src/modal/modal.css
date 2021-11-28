@@ -1,48 +1,53 @@
 .modal{
-    position: absolute;
-    top: 40px;
-    right: 5;
-    width: 90%;
-    background-color: #313030;
-    border-radius: 15px;
+  position: absolute;
+  top: 40px;
+  right: 2%;
+  width: 90%;
+  background-color: #313030;
+  border-radius: 15px;
 }
 @media (max-height: 2160px) {
-    .modal {
-      height: 90vh;
-    }
+  .modal {
+    height: 90vh;
   }
-  @media (max-height: 1915px) {
-    .modal {
-      height: 95vh;
-    }
+}
+@media (max-width: 1700px) {
+  .modal {
+    right: 1.5%;
   }
-  @media (max-height: 1340px) {
-    .modal {
-      height: 90vh;
-    }
+}
+@media (max-height: 1915px) {
+  .modal {
+    height: 95vh;
   }
-  @media (max-height: 990px) {
-    .modal {
-      height: 90vh;
-    }
+}
+@media (max-height: 1340px) {
+  .modal {
+    height: 90vh;
   }
-  @media (max-height: 750px) {
-    .modal {
-        top: 30px;
-    }
+}
+@media (max-height: 990px) {
+  .modal {
+    height: 90vh;
   }
-  @media (max-height: 630px) {
-    .modal {
-      height: 90vh;
-    }
+}
+@media (max-height: 750px) {
+  .modal {
+    top: 30px;
   }
-  @media (max-height: 530px) {
-    .modal {
-      height: 90vh;
-    }
+}
+@media (max-height: 630px) {
+  .modal {
+    height: 90vh;
   }
-  @media (max-height: 460px) {
-    .modal {
-      height: 90vh;
-    }
+}
+@media (max-height: 530px) {
+  .modal {
+    height: 90vh;
   }
+}
+@media (max-height: 460px) {
+  .modal {
+    height: 90vh;
+  }
+}

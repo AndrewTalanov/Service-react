@@ -1,7 +1,7 @@
 .header-select-city {
   display: flex;
   justify-content: flex-end;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .header-select-city img {
