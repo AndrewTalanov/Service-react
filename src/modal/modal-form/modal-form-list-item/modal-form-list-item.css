@@ -1,0 +1,54 @@
+.modal-form-list-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-list-item-client-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5% 0% 5% 0%;
+}
+
+.client-contacts-email {}
+
+.client-contacts-email input {
+    width: 345px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.client-contacts-phone input {
+    width: 345px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.modal-form-item-client-wishes {}
+
+.client-wishes-text {
+    width: 99.4%;
+    height: 113px;
+    border-radius: 10px
+}
+.btn-sumbit-form{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.btn-sumbit-form input[type="submit"] {
+    width: 344px;
+    height: 64px;
+    background: linear-gradient(91.98deg, #FEC163 0%, #DE4313 100%);
+    border-width: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fffdee;
+    font-size: 18px;
+}
+
+.btn-sumbit-form input[type=submit]:hover {
+    background: linear-gradient(91.98deg, #ff9900 0%, #ff3c00 100%);
+    transition: 0.8s ease;
+}

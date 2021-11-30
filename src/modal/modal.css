@@ -9,6 +9,126 @@
   border-radius: 15px;
 }
 
+.modal__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  height: 92%;
+}
+
+.modal__content h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.modal__content p {
+  color: #D4DAE5;
+  font-size: 18px;
+}
+
+.restaurant-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.restaurant-name {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+
+.restourant-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.restaurant-maps {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-----------Стили для названия ресторана, адреса и средний чек*/
+.restaurant-information-list {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  width: 100%;
+}
+
+.restaurant-information-phone-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.restaurant-information-phone-item p {
+  padding-left: 10px;
+}
+
+.restaurant-information-location-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.restaurant-information-location-item p {
+  padding-left: 10px;
+}
+
+.restaurant-information-time-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.restaurant-information-time-item p {
+  padding-left: 10px;
+}
+
+.restaurant-information-statistics {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-statistic-star {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant-statistic-star img {
+  height: 18px;
+  width: 18px;
+  padding: 3px;
+}
+
+.restaurant-statistic-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant-statistic-price img {
+  height: 18px;
+  width: 18px;
+  padding: 2px;
+}
+
+.restaurant-statistic-visitors {
+  display: flex;
+  align-items: baseline;
+}
+
+.restaurant-statistic-visitors p {
+  padding: 10px;
+}
+
 @media (max-width: 1600px) {
   .modal {
     left: 54%;
