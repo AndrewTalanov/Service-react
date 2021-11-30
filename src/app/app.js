@@ -1,10 +1,9 @@
 import { Component } from 'react';
-
+import SidebarMobile from '../sidebar/sidebar-mobile/sidebar-mobile';
 import Header from '../header/header';
 import Main from '../main/main';
 import Modal from '../modal/modal';
 import Sidebar from '../sidebar/sidebar';
-import SidebarMobile from '../sidebar/sidebar-mobile/sidebar-mobile';
 import './app.css'
 import restData from '../data.json' 
 
@@ -13,19 +12,21 @@ class App extends Component {
     super(props);
     this.state = {
       widthBool: null,
-      visibleModal: false
+      visibleModal: false,
     }
 
     this.toggleModal = this.toggleModal.bind(this)
   }
 
+  // включение/выключение модального окна
   toggleModal(bool) {
     this.setState({ visibleModal: bool })
   }
+
+  // отслеживаем ширину экрана 
   resize() {
     this.setState({ widthBool: window.innerWidth > 600 });
-  }
-
+  } 
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();

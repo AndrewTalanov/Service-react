@@ -5,10 +5,10 @@ import ModalSlider from './modal-slider/modal-slider'
 import ModalMap from './modal-map/modal-map'
 import ModalDrawing from './modal-drawing/modal-drawing'
 
-const Modal = ({visibleModal, toggleModal}) => {
+const Modal = ({toggleModal}) => {
     
     return(
-        <div className= {visibleModal ? "modal active" : "modal"}>
+        <div className= "modal">
             <div className="modal__content" onClick={ e => e.stopPropagation()}>
                 <ModalClose toggleModal={toggleModal}/>
                     <div className="restaurant-left">
