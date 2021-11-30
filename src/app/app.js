@@ -1,10 +1,9 @@
 import { Component } from 'react';
-
+import SidebarMobile from '../sidebar/sidebar-mobile/sidebar-mobile';
 import Header from '../header/header';
 import Main from '../main/main';
 import Modal from '../modal/modal';
 import Sidebar from '../sidebar/sidebar';
-import SidebarMobile from '../sidebar/sidebar-mobile/sidebar-mobile';
 import './app.css'
 import restData from '../data.json' 
 

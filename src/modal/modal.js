@@ -1,10 +1,10 @@
 import './modal.css';
 import ModalClose from './modal-close/modal-close';
 
-const Modal = ({visibleModal, toggleModal}) => {
+const Modal = ({toggleModal}) => {
     
     return(
-        <div className= {visibleModal ? "modal active" : "modal"}>
+        <div className= "modal">
             <div className="modal__content" onClick={ e => e.stopPropagation()}>
                 <ModalClose toggleModal={toggleModal}/>
             </div>
