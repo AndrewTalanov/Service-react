@@ -15,11 +15,29 @@ class App extends Component {
       visibleModal: false,
       openCard: 0,
       dataOpenCard: {},
+      term: ''
     }
 
     this.toggleModal = this.toggleModal.bind(this)
     this.isOpenCard = this.isOpenCard.bind(this)
     this.isDataOpenCard = this.isDataOpenCard.bind(this)
+    this.searchEmp = this.searchEmp.bind(this)
+    this.onUpdateSearch = this.onUpdateSearch.bind(this)
+  }
+
+  // изменение состояния значения строки поиска
+  onUpdateSearch(term) {
+    this.setState({ term })
+  }
+  // поиск по названию карточки
+  searchEmp(items, term){
+    if (term.lenght === 0) {
+      return items
+    } 
+
+    return items.filter(item => {
+      return item.name.toLowerCase().indexOf(term) > -1 
+    })
   }
 
   // включение/выключение модального окна
@@ -59,16 +77,17 @@ class App extends Component {
   }
 
   render() {
-    
+    const visibleData = this.searchEmp(restData.restorans, this.state.term)
+
     return (
       <div className="app">
         {this.state.widthBool && <Sidebar/>}
         <div className="content-page">      
-          {!this.state.visibleModal && <Header/>}
+          {!this.state.visibleModal && <Header onUpdateSearch={this.onUpdateSearch}/>}
           {!this.state.visibleModal && <Main
             toggleModal={this.toggleModal}
             isOpenCard={this.isOpenCard}
-            restData={restData}/>}
+            visibleData={visibleData}/>}
           {this.state.visibleModal && <Modal
             toggleModal={this.toggleModal}
             visibleModal={this.state.visibleModal}
