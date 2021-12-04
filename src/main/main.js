@@ -1,13 +1,14 @@
 import MainCardList from './main-card-list/main-card-list';
 import './main.css';
 
-const Main = ({toggleModal, restData}) => {
+const Main = ({toggleModal, restData, isOpenCard}) => {
   
   return (
     <div className="main">
       <MainCardList
         toggleModal={toggleModal}
-        restData={restData}/>
+        restData={restData}
+        isOpenCard={isOpenCard}/>
     </div>
   )
 }
