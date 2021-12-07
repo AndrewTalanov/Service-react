@@ -83,11 +83,14 @@ class App extends Component {
       <div className="app">
         {this.state.widthBool && <Sidebar/>}
         <div className="content-page">      
-          {!this.state.visibleModal && <Header onUpdateSearch={this.onUpdateSearch}/>}
+          {!this.state.visibleModal && <Header 
+            onUpdateSearch={this.onUpdateSearch}/>}
+
           {!this.state.visibleModal && <Main
             toggleModal={this.toggleModal}
             isOpenCard={this.isOpenCard}
             visibleData={visibleData}/>}
+
           {this.state.visibleModal && <Modal
             toggleModal={this.toggleModal}
             visibleModal={this.state.visibleModal}
