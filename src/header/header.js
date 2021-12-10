@@ -3,7 +3,7 @@ import HeaderSearchPanel from './header-search-panel/header-search-panel';
 import './header.css';
 import HeaderFilterPanel from './header-filter-panel/header-filter-panel';
 
-const Header = () => {
+const Header = ({onUpdateSearch}) => {
   return (
     <div className="header">
       <HeaderSelectCity/>
@@ -13,7 +13,7 @@ const Header = () => {
         </h1>
         <form action="" className="header-form">
           <HeaderFilterPanel/>
-          <HeaderSearchPanel/>  
+          <HeaderSearchPanel onUpdateSearch={onUpdateSearch}/>  
         </form>
       </div>
     </div>

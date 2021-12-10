@@ -5,14 +5,15 @@ import {Component} from 'react';
 class MainCardList extends Component {
 
   render() {
-    const {toggleModal, restData} = this.props
+    const {toggleModal, visibleData, isOpenCard} = this.props
     
-    const items = restData.restorans.map(item => {
+    const items = visibleData.map(item => {
       return (
         <MainCardListItem
           toggleModal={toggleModal}
-          restData={restData}
-          key={item.id} {...item}/>
+          visibleData={visibleData}
+          key={item.id} {...item}
+          isOpenCard={isOpenCard}/>
       )
     })
     

@@ -1,6 +1,6 @@
-import './header-select-city.css';
+import './header-select-city-item.css';
 
-const HeaderSelectCity = () => {
+const HeaderSelectCityItem = () => {
   return (
     <div className="header-select-city">
       <div className="header-select-city-content">
@@ -13,4 +13,4 @@ const HeaderSelectCity = () => {
   )
 }
 
-export default HeaderSelectCity;
+export default HeaderSelectCityItem;

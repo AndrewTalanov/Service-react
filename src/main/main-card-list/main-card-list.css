@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 2.5%;
+  transition: .5s;
 }
 .main-card-list::-webkit-scrollbar {
   width: 5px; 

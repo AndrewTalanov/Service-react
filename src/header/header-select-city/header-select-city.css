@@ -4,11 +4,14 @@
   margin-top: 15px;
   position: relative;
 }
+<<<<<<< HEAD
 
 .header-select-city-content:hover .dropdown-active {
   display: block;
 }
 
+=======
+>>>>>>> ece621713f149a995e6bb06bf44835639e108f63
 .header-select-city_dropdown-menu {
   cursor: pointer;
   display: flex;
@@ -19,6 +22,7 @@
 .header-select-city_dropdown-menu img {
   padding-left: 15px;
 }
+<<<<<<< HEAD
 
 .dropdown-active {
   position: absolute;
@@ -80,6 +84,8 @@
   }
 }
 
+=======
+>>>>>>> ece621713f149a995e6bb06bf44835639e108f63
 @media (max-width: 375px) {
   .header-select-city p {
     font-size: 14px;

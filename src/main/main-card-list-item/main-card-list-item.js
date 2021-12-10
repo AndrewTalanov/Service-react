@@ -2,7 +2,7 @@ import './main-card-list-item.css'
 
 const MainCardListItem = (props) => {
   
-  const {name, timeStart, timeEnd, street, house, images, stars, receipt} = props
+  const {name, timeStart, timeEnd, street, house, images, stars, receipt, id} = props
 
   let allStars = '';
   let allRec = '';
@@ -29,12 +29,8 @@ const MainCardListItem = (props) => {
   }
   getIcons()
 
-
-
-
-
   return (
-    <div onClick={() => props.toggleModal(true)} className="restaurant-container__card">
+    <div onClick={() => {props.isOpenCard(id); props.toggleModal(true)}} className="restaurant-container__card">
       <div className="restaurant_container__card-naming">
         <img className="card-list-item-img" src={images[0]} alt="img-error" />
         <p className="card-list-item-title">{name}</p>
