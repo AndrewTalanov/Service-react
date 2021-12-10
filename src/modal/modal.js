@@ -34,20 +34,24 @@ const Modal = ({toggleModal}) => {
                                 <div className="restaurant-information-statistics-item">                            
                                     <div className="restaurant-statistic-star">
                                         <h3>Оценка ресторана:</h3>
-                                        <img src="./images/star_active.svg" alt="star" />
-                                        <img src="./images/star_active.svg" alt="star" />
-                                        <img src="./images/star_active.svg" alt="star" />
-                                        <img src="./images/star_active.svg" alt="star" />
-                                        <img src="./images/star.svg" alt="star" />
+                                        <div className="restaurant-statistic-star-img">
+                                            <img src="./images/star_active.svg" alt="star" />
+                                            <img src="./images/star_active.svg" alt="star" />
+                                            <img src="./images/star_active.svg" alt="star" />
+                                            <img src="./images/star_active.svg" alt="star" />
+                                            <img src="./images/star.svg" alt="star" />
+                                        </div>                 
                                     </div>
                                     <div className="restaurant-statistic-price">
                                         <h3>Средняя цена чека:</h3>
-                                        <img src="./images/value_active.svg" alt="value" />
-                                        <img src="./images/value_active.svg" alt="value" />
-                                        <img src="./images/value_active.svg" alt="value" />
-                                        <img src="./images/value.svg" alt="value" />
-                                        <img src="./images/value.svg" alt="value" />
-                                        </div>
+                                        <div className="restaurant-statistic-price-img">
+                                            <img src="./images/value_active.svg" alt="value" />
+                                            <img src="./images/value_active.svg" alt="value" />
+                                            <img src="./images/value_active.svg" alt="value" />
+                                            <img src="./images/value.svg" alt="value" />
+                                            <img src="./images/value.svg" alt="value" />
+                                        </div>                    
+                                    </div>
                                     <div className="restaurant-statistic-visitors">
                                         <h3>Свободных мест:</h3>
                                         <p>17</p>                
@@ -57,7 +61,7 @@ const Modal = ({toggleModal}) => {
                         </div>
                 <ModalForm></ModalForm>
                 </div>             
-                <div className="restourant-right">
+                <div className="restaurant-right">
                     <ModalSlider></ModalSlider>
                     <div className="restaurant-maps">
                     <ModalDrawing></ModalDrawing>  

@@ -4,18 +4,22 @@
   margin-top: 15px;
   position: relative;
 }
+
 .header-select-city-content:hover .dropdown-active {
   display: block;
 }
+
 .header-select-city_dropdown-menu {
   cursor: pointer;
   display: flex;
   align-items: center;
   font-weight: bold;
 }
+
 .header-select-city_dropdown-menu img {
   padding-left: 15px;
 }
+
 .dropdown-active {
   position: absolute;
   display: none;
@@ -27,15 +31,18 @@
   overflow-y: scroll;
   padding: 0 42px 0 0;
 }
+
 .dropdown-active::-webkit-scrollbar {
-  width: 5px; 
+  width: 5px;
   background-color: #F2F2F2;
 }
+
 .dropdown-active::-webkit-scrollbar-thumb {
   background-color: #313030;
   border-radius: 10px;
 }
-.dropdown-active p{
+
+.dropdown-active p {
   background-color: #f2f2f2;
   display: inline-block;
   text-align: center;
@@ -44,29 +51,35 @@
   width: 100%;
   border: 1px solid #313030;
 }
-.dropdown-active p:hover{
+
+.dropdown-active p:hover {
   display: block;
   background-color: #313030;
   color: #f2f2f2;
 }
+
 @media (max-width: 600px) {
   .dropdown-active {
     width: 93%;
   }
+
   .dropdown-active::-webkit-scrollbar {
-    width: 2px; 
+    width: 2px;
   }
 }
+
 @media (max-width: 500px) {
   .dropdown-active {
     width: 91%;
   }
 }
+
 @media (max-width: 375px) {
   .dropdown-active {
     width: 88%;
   }
 }
+
 @media (max-width: 375px) {
   .header-select-city p {
     font-size: 14px;

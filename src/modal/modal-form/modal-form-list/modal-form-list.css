@@ -74,3 +74,30 @@
 .form_radio_btn label:hover {
     color: red;
 }
+
+
+/* -----------Адаптив-------------- */
+
+@media (max-width: 1600px) {
+   
+  }
+  
+  @media (max-width: 1340px) {
+    
+  }
+  
+  @media (max-width: 990px) {
+   
+  }
+  
+  @media (max-width: 750px) {
+   
+  }
+  
+  @media (max-width: 630px) {
+   
+  }
+  
+  @media (max-width: 600px) {
+    
+  }

@@ -1,9 +1,44 @@
 .restaurant-scheme-container{
-
+    width: 49%;
+    display: flex;
+    align-items: center;
 }
 .restaurant-scheme-map{
-    border-radius: 15px;
-    width: 390px;
-    height: 315px;
-    background-color:white;
+  display: flex;
+  align-items: center;
 }
+#restaurant-scheme-map-img {
+    -moz-user-select: none;
+     user-select: none;
+     height: 350px; 
+     /* Вот это надо допилить но пока не знаю как */
+  }
+  #restaurant-scheme-map-img img {
+    width: 100%;
+    cursor: zoom-in;
+    border-radius: 15px;
+  }
+  #restaurant-scheme-map-img img:focus {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 31;
+    max-width: 65%;
+    max-height: 100%;
+    outline: none;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-user-select: none; user-select: none;
+    transition: 0.3s ease;
+  }
+  #restaurant-scheme-map-img img:focus ~ div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    background: rgba(240,240,240,.9);
+    cursor: zoom-out;
+  }

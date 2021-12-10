@@ -7,14 +7,15 @@
   transform: translate(-50%, -50%);
   background-color: #313030;
   border-radius: 15px;
+  transition: 0.5s;
 }
 
 .modal__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px;
-  height: 92%;
+  padding: 20px;
+  height: 96%;
 }
 
 .modal__content h3 {
@@ -41,6 +42,7 @@
   width: 100%;
   justify-content: center;
   color: white;
+  margin-top: 2.5%;
 }
 
 .restourant-right {
@@ -48,11 +50,16 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 48%;
 }
 
 .restaurant-maps {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.restaurant-maps img {
+  height: 350px;
 }
 
 /*-----------Стили для названия ресторана, адреса и средний чек*/
@@ -133,7 +140,39 @@
   .modal {
     left: 54%;
   }
+  .modal__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+  .restaurant-left{
+    width: 90%;
+  }
+  .restaurant-right{
+    width: 90%;
+  }
 }
+
+@media (max-width: 1440px) {
+  .modal {
+    max-width: 88%;
+    left: 55%;
+  }
+
+  .modal__content {
+    padding: 25px;
+  }
+
+  .modal__content h3 {
+    font-size: 20px;
+  }
+
+  .modal__content p {
+    font-size: 15px;
+  }
+}
+
 
 @media (max-width: 1340px) {
   .modal {
